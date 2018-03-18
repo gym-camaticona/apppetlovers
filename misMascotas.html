@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Mascota</title>
+
+    <link href="https://file.myfontastic.com/SLzQsLcd7FmmzjBYTcyVW3/icons.css" rel="stylesheet">
+    <!--FontAwesome - iconos-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--Css-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="vistausuario.html">Mi perfil</a>
+            <a href="registroMascota.html">Registrar mascota</a>
+            <a href="misMascotas.html">Mis mascotas</a>
+            <a href="buscarCodigo.html">Buscar N° de identificación</a>
+            <a href="inicio.html">Productos</a>
+        </div>
+        <div class="navbar-global">
+            <nav class="navbar  bg-aqua navbar-dark">
+                <button class="navbar-toggler" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                        <img class="img-responsive" src="img-albergue/logo-1.jpg">
+                        PetLovers</a>   
+                             </nav>
+        </div>
+
+        <br>
+        <div class="container">
+            <div class="card-columns">
+
+                <div class="card">
+                    <img class="card-img-top" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/29066932_1727629567298189_7131324391523665164_n.jpg?oh=eb9ce55db0adf9ab307d09de2b77a788&oe=5B026062"
+                        alt="Card image cap">
+                    <p class="card-text text-right ">
+                        <small class="text-muted">
+                            <strong>Estado : </strong>ACTIVO</small>
+                    </p>
+
+                    <div class="card-body">
+                        <h5 class="card-title">PANCHO</h5>
+                        <p class="card-text ">N° de identificación: </p>
+                        <h4 class="text-center">986059</h4>
+
+
+                    </div>
+
+
+
+                    <div id="k-modal">
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="modal" data-target="#exampleModalLong" >
+                                            <i class="fas fa-plus"></i> Información
+                                    </button>
+                                </h5>
+                            </div>
+                            <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLongTitle">Información de mascota</h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                                                <div class="text-center  row">
+                                                        <div class="k-image">
+                                                            <i class="fa fa-paw" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                <div class="form-group row">
+                                                        <label  class="col-12 col-form-label text-center">Estado :  <strong>ACTIVO</strong></label>
+                                                        <label  class="col-12 col-form-label text-center">N° de identificación :  <strong>984950</strong></label>
+                                                        <label  class="col-12 col-form-label">Nombre :  <strong>PANCHO</strong></label>
+                                                        <label  class="col-12 col-form-label">Tipo de mascota :  <strong>Perro</strong></label>
+                                                        <label  class="col-12 col-form-label">Edad Actual:  <strong>1 año</strong></label>
+                                                        <label  class="col-12 col-form-label">Lugar de residencia :  <strong> Arequipa - Perú</strong></label>
+                                                        <label  class="col-12 col-form-label">Fecha de Nacimiento :  <strong>10/03/2017</strong></label>
+                                                        <label  class="col-12 col-form-label">Tamaño :  <strong>Pequeño</strong></label>
+                                                        <label  class="col-12 col-form-label">Sexo :  <strong>Macho</strong></label>
+                                                        <label  class="col-12 col-form-label">Esterelizado :  <strong>NO</strong></label>
+                                                        <label  class="col-12 col-form-label">Color y señas particulares :  <strong>Beige</strong> pelo ondulado, nariz pequeña y cogea de la pata derecha.</label>
+                                                        <label  class="col-12 col-form-label">Enfermedades :  <strong>Artritis</strong> (Pata trasera derecha)</label>
+                                                        <label  class="col-12 col-form-label">Vacunas :  <strong>Completa Anual</strong></label>
+                                                        <label  class="col-12 col-form-label">Fotos :  </label>
+                                                    </div>
+                                                    <div class="text-center  row">
+                                                        <div class="k-image">
+                                                            <i class="fa fa-paw" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="k-image">
+                                                            <i class="fa fa-paw" aria-hidden="true"></i>
+                                                        </div>
+                                                        <div class="k-image">
+                                                            <i class="fa fa-paw" aria-hidden="true"></i>
+                                                        </div>
+                                                    </div>
+                                                    <div class="text-right">
+                                                        <hr>
+                                                        <button  type="button" class="btn btn-dark">Añadir fotos</button>
+                                                    </div>
+                                                    
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Editar</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+            //document.getElementById("k-inicio").style.background = "#22222282";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            //document.getElementById("k-inicio").style.background = "white";
+
+        }
+    </script>
+</body>
+
+</html>

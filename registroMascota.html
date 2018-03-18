@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Mascota</title>
+
+    <link href="https://file.myfontastic.com/SLzQsLcd7FmmzjBYTcyVW3/icons.css" rel="stylesheet">
+    <!--FontAwesome - iconos-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--Css-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="registroMascota.html">Registrar mascota</a>
+            <a href="#">Mis mascotas</a>
+            <a href="buscarCodigo.html">Buscar N° de identificación</a>
+            <a href="inicio.html">Productos</a>
+        </div>
+        <div class="navbar-global">
+            <nav class="navbar  bg-aqua navbar-dark">
+                <button class="navbar-toggler" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                        <img class="img-responsive" src="img-albergue/logo-1.jpg">
+                        PetLovers</a>
+            </nav>
+        </div>
+
+        <br>
+
+        <div class="container">
+            <h2 class="text-center">Registro de Mascota</h2>
+            <form class="was-validated needs-validation">
+
+                <div class="text-center  row">
+                    <div class="k-image">
+                        <i class="fa fa-paw" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="validationTooltip01" class="col-12 col-form-label">Nombre :</label>
+                    <div class=" col-12">
+                        <input class="form-control" type="text" id="validationTooltip01" placeholder="Ejm: Pipo" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-12 col-form-label">Tipo de mascota :</label>
+                    <div class="col-6">
+                        <select class="custom-select" id="tipoMascota" required>
+                            <option value="">Elegir...</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <div class="invalid-feedback">Elija una de las opciones</div>
+                    </div>
+                    <div class="col-6" id="tipoMasc">
+                        <input class="form-control" type="text" placeholder="*Expecificar" required>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-12 col-form-label">Sexo:</label>
+                    <div class="col-12">
+                        <select class="custom-select" required>
+                            <option value="">Elegir...</option>
+                            <option value="macho">Macho</option>
+                            <option value="hembra">Hembra</option>
+                        </select>
+                        <div class="invalid-feedback">Elija una de las opciones</div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-12 col-form-label">Tamaño:</label>
+                    <div class="col-12">
+                        <select class="custom-select" required>
+                            <option value="">Elegir...</option>
+                            <option value="grande">Grande</option>
+                            <option value="mediano">Mediano</option>
+                            <option value="pequeno">Pequeño</option>
+                        </select>
+                        <div class="invalid-feedback">Elija una de las opciones</div>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-12 col-form-label">Fecha de Nacimiento (o aprox.):</label>
+                    <div class="col-12">
+                        <input class="form-control" type="date">
+                    </div>
+                </div>
+
+                <div class="form-group  row">
+                    <label for="example-date-input validationTooltip01" class="col-12 col-form-label">Edad Actual (o aprox.):</label>
+                    <div class="col-6">
+                        <input class="form-control" type="number" id="validationTooltip01" placeholder="Edad" required>
+                    </div>
+                    <div class="col-6">
+                        <select class="custom-select" required>
+                            <option value=""></option>
+                            <option value="dias">Días</option>
+                            <option value="meses">Meses</option>
+                            <option value="años">Años</option>
+                        </select>
+                        <div class="invalid-feedback">Elija una de las opciones</div>
+                    </div>
+                </div>
+
+
+
+                <fieldset class="form-group">
+                    <div class="row">
+                        <legend class="col-form-label col-12 pt-0">¿Tu mascota se encuentra esterelizado(a)?</legend>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                    Si
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    No
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label class="col-form-label" for="exampleTextarea">Color y señas particulares :</label>
+                    <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="*Es muy necesario para el reconocimiento de la mascota."
+                        required></textarea>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-12 col-form-label">Enfermedades :</label>
+                    <div class=" col-12">
+                        <input class="form-control" type="text" placeholder="¿Tu mascota posee alguna enfermedad? *Expecifica">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label class="col-12 col-form-label">Vacunas :</label>
+                    <div class=" col-12">
+                        <input class="form-control" type="text" placeholder="¿Tu mascota posee alguna vacuna? *Expecifica">
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-12 col-form-label">ESTADO :</label>
+                    <div class="col-12">
+                        <select class="custom-select" required>
+                            <option value="">Estado</option>
+                            <option value="activo">Activo</option>
+                            <option value="perdido">Perdido</option>
+                        </select>
+                        <div class="invalid-feedback">Elija una de las opciones</div>
+                    </div>
+                </div>
+
+                <div class="card card-body bg-light">
+                    <p>El<strong>estado</strong> de tu mascota es de suma importancia:</p>
+                    <p><strong>Activo : </strong>La mascota se encuentra bajo el cuidado de su propietario.</p>
+                    <p><strong>Perdido : </strong>La mascota se encuentra pérdida, ten en cuenta que la mascota irá directamente
+                        a la lista de pérdidos.</p>
+                </div>
+                <br/>
+                <div class="k-registro">
+                    <a href="registroCompletado.html" type="submit" class="k-btn btn btn-success font-weight-bold text-uppercase">Registrar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+            //document.getElementById("k-inicio").style.background = "#22222282";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            //document.getElementById("k-inicio").style.background = "white";
+
+        }
+
+        var select = document.getElementById('tipoMascota');
+        select.addEventListener('change',
+            function () {
+                var selectedOption = this.options[select.selectedIndex];
+                console.log(selectedOption.value + ': ' + selectedOption.text);
+                if(selectedOption.text === "Otro"){
+                    document.getElementById("tipoMasc").style.display = "inline";
+                }
+                else{
+                    document.getElementById("tipoMasc").style.display = "none";
+                }
+            });
+    </script>
+</body>
+
+</html>

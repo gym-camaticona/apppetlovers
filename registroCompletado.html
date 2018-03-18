@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Usuario</title>
+
+    <link href="https://file.myfontastic.com/SLzQsLcd7FmmzjBYTcyVW3/icons.css" rel="stylesheet">
+    <!--FontAwesome - iconos-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--Css-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="inicio.html">Inicio</a>
+            <a href="registroMascota.html">Registrar mascota</a>
+            <a href="misMascotas.html">Mis mascotas</a>
+            <a href="buscarCodigo.html">Buscar N° de identificación</a>
+            <a href="inicio.html">Productos</a>
+        </div>
+        <div class="navbar-global">
+            <nav class="navbar  bg-aqua navbar-dark">
+                <button class="navbar-toggler" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="inicio.html">
+                    <i class="fa fa-paw" aria-hidden="true"></i> PetLovers</a>
+            </nav>
+        </div>
+
+        <br>
+        <div class="alert alert-success alert-dismissible fade show text-center" role="alert">
+            <strong>¡Se ha registrado con exito!</strong> Tu mascota ha sido añadida a <a href="#" class="alert-link">Mis Mascotas</a>.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="container">
+            <div class="text-center  row">
+                <div class="k-image">
+                    <i class="fa fa-paw" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="form-group row text-center">
+                <label class="col-12 col-form-label">Nombre :</label>
+                <div class=" col-12">
+                    <h2 class="" >PANCHO</h2>
+                </div>
+                <label class="col-12 col-form-label">N° de identificación :</label>
+                <div class=" col-12">
+                    <h2 class="" >809362</h2>
+                </div>
+                <label class="col-12 col-form-label">Estado :</label>
+                <div class=" col-12">
+                    <h2 class="" >Activo</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="k-registro">
+            <a href="registroMascota.html" type="submit" class="k-btn btn btn-success font-weight-bold text-uppercase">Registrar otra mascota</a> 
+            <a href="misMascotas.html" type="submit" class="k-btn btn btn-success font-weight-bold text-uppercase">Mis mascotas</a>
+        </div>
+        </form>
+    </div>
+    </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+            //document.getElementById("k-inicio").style.background = "#22222282";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            //document.getElementById("k-inicio").style.background = "white";
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registro de Usuario</title>
+
+    <link href="https://file.myfontastic.com/SLzQsLcd7FmmzjBYTcyVW3/icons.css" rel="stylesheet">
+    <!--FontAwesome - iconos-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!--Css-->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="vistausuario.html">MI PERFIL</a>
+            <a href="registroMascota.html">REGISTRAR MI MASCOTA</a>
+            <a href="misMascotas.html">MIS MACOTAS</a>
+            <a href="inicio.html"></a>
+        </div>
+        <div class="navbar-global">
+            <nav class="navbar  bg-aqua navbar-dark">
+                <button class="navbar-toggler" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+
+                    <!-- <a class="navbar-brand" href="#"> -->
+                    <img class="img-responsive" src="img-albergue/logo-1.jpg"> PetLovers
+                </a>
+                <!-- <i class="fa fa-paw" aria-hidden="true"></i> PetLovers</a> -->
+            </nav>
+        </div>
+
+        <br>
+
+        <div id="k-inicio" class=" container k-user">
+
+            <div>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-buscados-tab" data-toggle="tab" href="#nav-buscados" role="tab" aria-controls="nav-buscados"
+                            aria-selected="true">
+                            <i class="fas fa-question"></i>
+                            <p class="k-tab">PERDIDAS</p>
+                        </a>
+                        <a class="nav-item nav-link" id="nav-encontrados-tab" data-toggle="tab" href="#nav-encontrados" role="tab" aria-controls="nav-encontrados"
+                            aria-selected="false">
+                            <i class="fas fa-bullhorn"></i>
+                            <p class="k-tab">ENCONTRADAS</p>
+                        </a>
+                        <a class="nav-item nav-link" id="nav-adopcion-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-adopcion" aria-selected="false">
+                            <i class="far fa-heart"></i>
+                            <p class="k-tab">RECUPERADAS</p>
+                        </a>
+
+                        <a class="nav-item nav-link" id="nav-adopcion-tab" data-toggle="tab" href="#" role="tab" aria-controls="nav-adopcion" aria-selected="false">
+                        <i class="far fa-heart"></i>
+                        <p class="k-tab">EN ADOPCIÓN</p>
+                    </a> <a class="nav-item nav-link" id="nav-albergues-tab" data-toggle="tab" href="#nav-albergues"
+                            role="tab" aria-controls="nav-albergues" aria-selected="false">
+                            <i class="fas fa-home"></i>
+                            <p class="k-tab">ALBERGUES</p>
+                        </a>
+                        <a class="nav-item nav-link" id="nav-veterinaria-tab" data-toggle="tab" href="#nav-veterinaria" role="tab" aria-controls="nav-veterinaria"
+                            aria-selected="false">
+                            <i class="fas fa-stethoscope"></i>
+                            <p class="k-tab">VETERENARIAS</p>
+                        </a>
+                        <a class="nav-item nav-link" id="nav-producto-tab" data-toggle="tab" href="#nav-producto" role="tab" aria-controls="nav-producto"
+                            aria-selected="false">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p class="k-tab">PRODUCTOS</p>
+                        </a>
+
+                        <a class="nav-item nav-link g-regmas" id="nav-registromascotaperdida-tab" data-toggle="tab" href="#nav-registromascotaperdida"
+                            aria-selected="false">
+                        <i class="fas fa-shopping-cart"></i>
+                        <p class="k-tab">REGISTRAR MASCOTA</p>
+                    </a>
+
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-buscados" role="tabpanel" aria-labelledby="nav-buscados-tab">
+                        <a href="detalles.html" class="col-xs-12 col-sm-4 col-md-4 k-card card border-danger mb-3">
+                            <div class="card-header">
+                                <img class="k-perdido" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/29066932_1727629567298189_7131324391523665164_n.jpg?oh=eb9ce55db0adf9ab307d09de2b77a788&oe=5B026062"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-danger">Rufus
+                                    <span style="float:right;">10/03/18</span>
+                                </h5>
+                                <p class="text-danger">AREQUIPA</p>
+                                <p class="card-text">Se perdió el día de hoy mi perrito poodle de nombre Rufus por Adepa...
+                                    <span class=" text-danger">Mas detalles</span>
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+                    <div class="tab-pane fade" id="nav-encontrados" role="tabpanel" aria-labelledby="nav-encontrados-tab">
+                        <a href="detalles.html" class="col-xs-12 col-sm-4 col-md-4 k-card card border-warning mb-3">
+                            <div class="card-header">
+                                <img class="k-perdido" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/29066932_1727629567298189_7131324391523665164_n.jpg?oh=eb9ce55db0adf9ab307d09de2b77a788&oe=5B026062"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-warning">Rufus
+                                    <span style="float:right;">10/03/18</span>
+                                </h5>
+                                <p class="text-warning">AREQUIPA</p>
+                                <p class="card-text">Se perdió el día de hoy mi perrito poodle de nombre Rufus por Adepa...
+                                    <span class=" text-warning">Mas detalles</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-adopcion" role="tabpanel" aria-labelledby="nav-adopcion-tab">
+                        <a href="detalles.html" class="col-xs-12 col-sm-4 col-md-4 k-card card border-info mb-3">
+                            <div class="card-header">
+                                <img class="k-perdido" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/29066932_1727629567298189_7131324391523665164_n.jpg?oh=eb9ce55db0adf9ab307d09de2b77a788&oe=5B026062"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-info">Rufus
+                                    <span style="float:right;">10/03/18</span>
+                                </h5>
+                                <p class="text-info">AREQUIPA</p>
+                                <p class="card-text">Se perdió el día de hoy mi perrito poodle de nombre Rufus por Adepa...
+                                    <span class=" text-info">Mas detalles</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-albergues" role="tabpanel" aria-labelledby="nav-albergues-tab">
+                        <a href="detalles.html" class="col-xs-12 col-sm-4 col-md-4 k-card card border-dark mb-3">
+                            <div class="card-header">
+                                <img class="k-perdido" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/1907594_430188097148726_3083450303772622007_n.jpg?_nc_eui2=v1%3AAeEnff106kDQ0S1XzMhQnmXXveH9egJWTavYNUxqiiFfE4tX5hf7I6bF1UHWRmF4k625Uxl4NTuIcMJeJnHmx7urh7ixR2eeCVnWlhuPPTLYmQ&oh=409c02a4e70fd8ad61225eaa077dd5e2&oe=5B05AE03"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-dark">Albergue de la casa de Amelie
+                                </h5>
+                                <p class="text-dark">AREQUIPA</p>
+                                <p class="card-text">Esta labor la empecé en el año 2009, en Pto. Maldonado...
+                                    <span class=" text-dark">Mas información</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-veterinaria" role="tabpanel" aria-labelledby="nav-veterinaria-tab">
+                        <a href="detalles.html" class="col-xs-12 col-sm-4 col-md-4 k-card card border-primary mb-3">
+                            <div class="card-header">
+                                <img class="k-perdido" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/25446334_1234533653315334_4115346879203700722_n.jpg?_nc_eui2=v1%3AAeEE48LiBQ4RK90PApXnpjFJwcSBiZjl74VjMsLoE5G-OGktvpCKgCOIrtWG3MO4S7DZTOu5f-8Ep9p7lW9gmJJWKuCS3ZC2CL4qkb7m5bk8cg&oh=c88eb8b06d71db8635708fa7a65dfeca&oe=5B31F83B"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-primary">Veterinaria MUNDO PERÚ
+                                </h5>
+                                <p class="text-primary">(054) 584965</p>
+                                <p class="card-text">AV DOLORES 130 Arequipilla, Arequipa, Peru
+                                    <span class=" text-primary">Mas información</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="tab-pane fade" id="nav-producto" role="tabpanel" aria-labelledby="nav-producto-tab">
+                        <a href="detalles.html" class="col-xs-12 col-sm-4 col-md-4 k-card card border-secondary mb-3">
+                            <div class="card-header">
+                                <img class="k-perdido" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/28471842_194464491152518_5035683879091098101_n.jpg?_nc_eui2=v1%3AAeGmt8QGKlPKNlrd6aB-nlCHtE4jIxJE7udmlkIgn7uQ2d8MZpwfw7tR1kEu8WbjApcO5ZOVmxyar-GCxx3EVs-H4TbpEtg2c6tiprCGwk4pXg&oh=428e16e71de82efc7a5052ab8d3a37ce&oe=5B3AE282"
+                                    alt="">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Accesorio PetLover
+                                </h5>
+                                <p class="text-secondary">(054) 584965</p>
+                                <p class="card-text">AV DOLORES 130 Arequipilla, Arequipa, Peru
+                                    <span class=" text-secondary">Mas información</span>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-registromascotaperdida" role="tabpanel" aria-labelledby="nav-registromascotaperdida-tab">
+                        <div>
+                            <div class="card-header">
+                                <img class="card-img-top" src="img-albergue/dog.jpg" alt="Card image cap">
+
+                                <ul class="list-group list-group-flush">
+                                    <!-- <li class="list-group-item input-p"> <-->
+                                    <label for="">Nombre:</label>
+                                    <input type="text" class="form-control input-p" id="formGroupExampleInput" >
+                                    <label for="">Fecha:</label>
+
+                                    <input type="text" class="form-control input-p" id="formGroupExampleInput" >
+                                    <label for="">Lugar:</label>
+
+                                    <input type="text" class="form-control input-p" id="formGroupExampleInput2">
+                                    <label for="">Descripcón:</label>
+                                    <textarea class="form-control form-rounded input-p" rows="3" ></textarea>
+
+                                    <label for="example-date-input" class="col-12 col-form-label">Salud:</label>
+                                    
+                                    <select class="custom-select input-p" required>
+                                                    <option value="perro">EXCELENTE</option>
+                                                    <option value="gato">BUENA</option>
+                                                    <option value="gato">MALITA</option>
+                                                    
+                                                </select>
+                                    <!-- </li> -->
+
+                                    <div class="form-group row">
+                                        <label for="example-date-input" class="col-12 col-form-label">Estado:</label>
+                                        <div class="col-12">
+                                            <select class="custom-select" required>
+                                                <option value="">PERDIDAS</option>
+                                                <option value="activo">ENCONTRADAS</option>
+                                            </select>
+                                            <div class="invalid-feedback">Elija una de las opciones</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="k-registro">
+                                        <a href="inicio.html" type="submit" class="k-btn btn btn-success font-weight-bold text-uppercase">Registrar</a>
+                                    </div>
+                                    <!-- <li class="list-group-item"> -->
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <br/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "50%";
+            //document.getElementById("k-inicio").style.background = "#22222282";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            //document.getElementById("k-inicio").style.background = "white";
+
+        }
+    </script>
+</body>
+
+</html>
