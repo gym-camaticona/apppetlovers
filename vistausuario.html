@@ -30,23 +30,78 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="card-columns">
-      <div class="card">
-        <img class="card-img-top" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/29066932_1727629567298189_7131324391523665164_n.jpg?oh=eb9ce55db0adf9ab307d09de2b77a788&oe=5B026062"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5 class="card-title">ROSA PAZ PAZ</h5>
-          <p class="card-text ">Correo: gymcamaticona@gmail.com</p>
-          <p class="card-text">Dirección: av. bolognesi</p>
-          <p class="card-text">Fecha de nacimiento:10/03/2018</p>
-          <h4 class="card-text">Contacto:952902217</h4>
+  <div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-          <div class="k-registro">
-            <a href="misMascotas.html" type="submit" class="k-btn btn btn-success font-weight-bold text-uppercase">Mis mascotas</a>
+      <a href="vistausuario.html">MI PERFIL</a>
+      <a href="misMascotas.html">Mis mascotas</a>
+
+      <a href="registroMascota.html">Registrar mi mascota</a>
+      <a href="registroMascota.html">Registrar albergue</a>
+      <a href="registroMascota.html">Registrar veterinarias</a>
+      <!-- <a href="inicio.html">Inicio</a> -->
+      <!-- <a href="registroMascota.html">Registrar mascota</a> -->
+      <!-- <a href="#">Mis mascotas</a> -->
+      <a href="buscarCodigo.html">Buscar N° de identificación</a>
+      <a href="inicio.html">PRODUCTOS</a>
+    </div>
+    <div class="navbar-global">
+      <nav class="navbar  bg-aqua navbar-dark">
+        <button class="navbar-toggler" onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <a class="navbar-brand" href="#">
+                    <img class="img-responsive" src="img-albergue/logo-1.jpg">
+                    PetLovers</a>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="card-columns">
+        <div class="card">
+          <img class="card-img-top" src="https://scontent.flim5-1.fna.fbcdn.net/v/t1.0-9/29066932_1727629567298189_7131324391523665164_n.jpg?oh=eb9ce55db0adf9ab307d09de2b77a788&oe=5B026062"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">ROSA PAZ PAZ</h5>
+            <p class="card-text ">Correo: gymcamaticona@gmail.com</p>
+            <p class="card-text">Dirección: av. bolognesi</p>
+            <p class="card-text">Fecha de nacimiento:10/03/2018</p>
+            <h4 class="card-text">Contacto:952902217</h4>
+
+            <div class="k-registro">
+              <a href="misMascotas.html" type="submit" class="k-btn btn btn-success font-weight-bold text-uppercase">Mis mascotas</a>
+            </div>
           </div>
         </div>
+
       </div>
+
+      <script>
+          function openNav() {
+              document.getElementById("mySidenav").style.width = "50%";
+              //document.getElementById("k-inicio").style.background = "#22222282";
+          }
+  
+          function closeNav() {
+              document.getElementById("mySidenav").style.width = "0";
+              //document.getElementById("k-inicio").style.background = "white";
+  
+          }
+  
+          var select = document.getElementById('tipoMascota');
+          select.addEventListener('change',
+              function () {
+                  var selectedOption = this.options[select.selectedIndex];
+                  console.log(selectedOption.value + ': ' + selectedOption.text);
+                  if(selectedOption.text === "Otro"){
+                      document.getElementById("tipoMasc").style.display = "inline";
+                  }
+                  else{
+                      document.getElementById("tipoMasc").style.display = "none";
+                  }
+              });
+      </script>
 </body>
 
 </html>
